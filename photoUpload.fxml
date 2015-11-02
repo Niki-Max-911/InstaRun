@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="479.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" layoutX="25.0" layoutY="26.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="348.0" prefWidth="200.0">
+         <content>
+            <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="288.0" prefWidth="170.0">
+               <center>
+                  <ListView maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="312.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+               </center>
+               <top>
+                  <Label text="Фотографии:" BorderPane.alignment="CENTER_LEFT">
+                     <BorderPane.margin>
+                        <Insets left="10.0" />
+                     </BorderPane.margin>
+                  </Label>
+               </top>
+            </BorderPane>
+         </content>
+      </ScrollPane>
+      <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="338.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true" />
+      <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="338.0" layoutY="234.0" prefHeight="109.0" prefWidth="200.0">
+         <content>
+            <TextArea prefHeight="115.0" prefWidth="198.0" />
+         </content>
+      </ScrollPane>
+      <Button layoutX="233.0" layoutY="126.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" text="Очистить" />
+      <Button layoutX="233.0" layoutY="164.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" text="Добавить" />
+      <MenuButton layoutX="448.0" layoutY="349.0" mnemonicParsing="false" text="Сохранить">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </MenuButton>
+      <ToggleButton layoutX="233.0" layoutY="349.0" mnemonicParsing="false" text="ToggleButton" />
+   </children>
+</AnchorPane>
