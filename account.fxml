@@ -5,7 +5,6 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
 <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <FlowPane alignment="CENTER" maxHeight="31.0" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0">
@@ -15,7 +14,7 @@
                   <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
                </FlowPane.margin>
             </Label>
-            <TextField alignment="CENTER_RIGHT" promptText="login">
+            <TextField fx:id="txtInstaLogin" alignment="CENTER_RIGHT" promptText="login">
                <FlowPane.margin>
                   <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
                </FlowPane.margin>
@@ -25,7 +24,7 @@
                   <Insets left="3.0" right="3.0" />
                </FlowPane.margin>
             </Label>
-            <TextField promptText="password">
+            <TextField fx:id="txtInstaPass" promptText="password">
                <FlowPane.margin>
                   <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
                </FlowPane.margin>
@@ -42,7 +41,7 @@
                         <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
                      </FlowPane.margin>
                   </Label>
-                  <TextField alignment="CENTER_RIGHT" promptText="ip">
+                  <TextField fx:id="txtProxyIp" alignment="CENTER_RIGHT" promptText="ip">
                      <FlowPane.margin>
                         <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
                      </FlowPane.margin>
@@ -52,7 +51,7 @@
                         <Insets left="3.0" right="3.0" />
                      </FlowPane.margin>
                   </Label>
-                  <TextField promptText="port">
+                  <TextField fx:id="txtProxyPort" promptText="port">
                      <FlowPane.margin>
                         <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
                      </FlowPane.margin>
@@ -64,7 +63,7 @@
             </FlowPane>
             <FlowPane alignment="CENTER" maxHeight="31.0" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0">
                <children>
-                  <TextField alignment="CENTER_RIGHT" promptText="login">
+                  <TextField fx:id="txtProxyLogin" alignment="CENTER_RIGHT" promptText="login">
                      <FlowPane.margin>
                         <Insets bottom="3.0" left="10.0" right="3.0" top="3.0" />
                      </FlowPane.margin>
@@ -74,7 +73,7 @@
                         <Insets left="3.0" right="3.0" />
                      </FlowPane.margin>
                   </Label>
-                  <TextField promptText="password">
+                  <TextField fx:id="txtProxyPassword" promptText="password">
                      <FlowPane.margin>
                         <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
                      </FlowPane.margin>
@@ -94,7 +93,7 @@
                   <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
                </FlowPane.margin>
             </Label>
-            <TextField alignment="CENTER_RIGHT" promptText="email">
+            <TextField fx:id="txtEmailLogin" alignment="CENTER_RIGHT" promptText="email">
                <FlowPane.margin>
                   <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
                </FlowPane.margin>
@@ -104,7 +103,7 @@
                   <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
                </FlowPane.margin>
             </Label>
-            <TextField promptText="password">
+            <TextField fx:id="txtEmailPassword" promptText="password">
                <FlowPane.margin>
                   <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
                </FlowPane.margin>
@@ -117,12 +116,12 @@
       <Separator maxWidth="10.0" orientation="VERTICAL" prefHeight="10.0" visible="false" />
       <FlowPane alignment="CENTER" maxHeight="31.0" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0">
          <children>
-            <Button alignment="CENTER" mnemonicParsing="false" text="Авторизация">
+            <Button fx:id="btnLogin" alignment="CENTER" mnemonicParsing="false" text="Авторизация/Сохранить">
                <FlowPane.margin>
-                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                  <Insets bottom="3.0" left="-15.0" right="3.0" top="3.0" />
                </FlowPane.margin>
             </Button>
-            <Button alignment="CENTER" mnemonicParsing="false" text="Остановить">
+            <Button fx:id="btnStop" alignment="CENTER" mnemonicParsing="false" text="Остановить">
                <FlowPane.margin>
                   <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
                </FlowPane.margin>
